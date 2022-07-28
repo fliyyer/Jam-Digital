@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(Asset/bg.jpg);
+    background-size: cover;
+}
+
+#clock h2 {
+    position: relative;
+    display: block;
+    color: #FCF8E8;
+    text-align: center;
+    font-weight: 700;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+}
+
+#clock #time {
+    display: flex;
+}
+
+#clock #time div {
+    position: relative;
+    margin: 0 40px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+#clock #time div span {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 80px;
+    background: #3330E4;
+    color: #fff;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    z-index: 10;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
+    border-radius: 4px;
+}
+
+#clock #time div span:nth-child(2) {
+    height: 30px;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+    font-weight: 500px;
+    z-index: 9;
+    box-shadow: none;
+    background: #0400c9;
+    text-transform: uppercase;
+}
+
+#clock #time div:last-child span {
+    background: #FF0063;
+}
+
+#clock #time div:last-child span:nth-child(2) {
+    background: #ff0062dc;
+}
+
+footer {
+    width: 100%;
+    padding: 1.5rem 1;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1244px) {
+    body {
+        min-height: 80vh;
+    }
+}
